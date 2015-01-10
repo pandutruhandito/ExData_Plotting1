@@ -16,7 +16,7 @@ hh$datetime <- strptime(paste(hh$date,hh$time),"%d/%m/%Y %H:%M:%S")
 hh[,3:8] <- as.data.frame(lapply(hh[,3:8],function(x) as.numeric(as.character(x))))
 
 #set the board
-par(mfcol=c(2,2))
+par(mfcol=c(2,2), mar=c(2,4,2,1)
 
 #plot data 1
 plot(hh$datetime,hh$global_active_power,ylab="Global Active Power", type="l", xlab="")
